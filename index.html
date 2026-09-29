@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micaela Sofia Sousa — Web Developer</title>
+  <meta name="description" content="Portfólio de Micaela Sofia Sousa, web developer no Porto. Construo sites e lojas online completas, do design à base de dados.">
+  <!-- Open Graph: aparece bonito quando partilhas o link no LinkedIn -->
+  <meta property="og:title" content="Micaela Sofia Sousa — Web Developer">
+  <meta property="og:description" content="Construo sites e lojas online completas, do design à base de dados.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232b3cff'/><text x='50' y='68' font-size='58' text-anchor='middle' fill='white' font-family='Georgia' font-style='italic'>s</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav">
+    <a href="#top" class="nav__logo">sofia<span>.</span>dev</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#sobre">Sobre</a>
+      <a href="#stack">Stack</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#disponivel">Disponibilidade</a>
+      <a href="#contacto" class="nav__cta">Contratar</a>
+    </nav>
+    <div class="nav__tools">
+      <button class="icon-btn" id="themeToggle" aria-label="Mudar tema">◐</button>
+      <button class="icon-btn nav__burger" id="burger" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="status"><span class="status__dot"></span> Disponível para começar já · Porto</div>
+
+      <h1 class="hero__title">
+        Olá, sou a <em>Sofia</em>.<br>
+        Eu <span class="rotator" id="rotator">construo lojas online</span><span class="caret">|</span>
+      </h1>
+
+      <p class="hero__lead">
+        Web developer que não se fica pelo ecrã bonito: faço o design, escrevo o
+        front&#8209;end <strong>e</strong> ligo tudo a uma base de dados real.
+        Aprendo depressa, resolvo problemas sozinha e gosto de ver as coisas a funcionar em produção.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#projetos" class="btn btn--primary">Ver o meu trabalho ↓</a>
+        <a href="assets/CV-Sofia-Sousa.pdf" class="btn btn--ghost" download>Descarregar CV</a>
+      </div>
+
+      <!-- Mini-terminal interativo: o elemento que te diferencia -->
+      <div class="terminal" id="terminal" aria-label="Terminal interativo">
+        <div class="terminal__bar">
+          <span></span><span></span><span></span>
+          <p>sofia@portfolio ~ escreve <b>ajuda</b></p>
+        </div>
+        <div class="terminal__body" id="termBody">
+          <p class="t-muted">Bem-vindo(a)! Este portfólio também se explora pelo terminal.</p>
+        </div>
+        <form class="terminal__input" id="termForm" autocomplete="off">
+          <span class="t-prompt">❯</span>
+          <input id="termInput" type="text" placeholder="ajuda" spellcheck="false" aria-label="Comando">
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="section" id="sobre">
+      <p class="eyebrow">01 — Sobre mim</p>
+      <div class="about">
+        <h2 class="section__title">Não espero que me digam <em>como</em>. Descubro.</h2>
+        <div class="about__text">
+          <p>
+            Comecei a programar porque queria criar coisas que as pessoas usassem de verdade.
+            O meu maior projeto até agora é a <strong>Northside</strong>, uma loja online que
+            construí de raiz: catálogo, carrinho, base de dados, pagamentos e alojamento.
+          </p>
+          <p>
+            Pelo caminho parti coisas, perdi código, voltei a pôr tudo de pé e aprendi mais
+            com isso do que com qualquer tutorial. É assim que trabalho: com autonomia,
+            curiosidade e vontade de acabar o que começo.
+          </p>
+          <ul class="facts">
+            <li><span>📍</span> Porto · presencial, híbrido ou remoto</li>
+            <li><span>🗣️</span> Português · Espanhol (avançado) · Francês (conversacional) · Inglês</li>
+            <li><span>⚡</span> Disponibilidade imediata</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Porquê eu -->
+      <div class="why">
+        <article class="why__card">
+          <span class="why__n">A</span>
+          <h3>Full-stack na prática</h3>
+          <p>Do HTML ao PHP, MySQL e Python. Consigo entregar uma funcionalidade inteira, não só metade.</p>
+        </article>
+        <article class="why__card">
+          <span class="why__n">B</span>
+          <h3>Olho para o negócio</h3>
+          <p>Pagamentos, stock, códigos de desconto: penso no que faz o cliente vender, não só no código.</p>
+        </article>
+        <article class="why__card">
+          <span class="why__n">C</span>
+          <h3>Aprendo a correr</h3>
+          <p>Stripe, PHPMailer, Composer — aprendi cada um quando o projeto precisou.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== STACK ===== -->
+    <section class="section" id="stack">
+      <p class="eyebrow">02 — Linguagens &amp; ferramentas</p>
+      <h2 class="section__title">A minha <em>tabela periódica</em></h2>
+      <p class="section__sub">Passa o rato (ou toca) em cada elemento para ver onde o usei.</p>
+
+      <!-- [EDITAR] Os elementos são gerados a partir da lista em script.js → STACK -->
+      <div class="filters" id="stackFilters">
+        <button class="chip is-active" data-filter="all">Tudo</button>
+        <button class="chip" data-filter="front">Front-end</button>
+        <button class="chip" data-filter="back">Back-end</button>
+        <button class="chip" data-filter="tool">Ferramentas</button>
+      </div>
+      <div class="periodic" id="periodic"></div>
+      <div class="element-detail" id="elementDetail" aria-live="polite">
+        <p class="t-muted">Escolhe um elemento ↑</p>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section class="section" id="projetos">
+      <p class="eyebrow">03 — Projetos</p>
+      <h2 class="section__title">Coisas que <em>construí</em> (e o que aprendi)</h2>
+
+      <!-- Projeto principal -->
+      <article class="case">
+        <div class="case__visual case__visual--northside">
+          <div class="mock">
+            <div class="mock__bar"><span></span><span></span><span></span><em>northside</em></div>
+            <div class="mock__hero">
+              <strong>NORTHSIDE</strong>
+              <small>Tech &amp; Home</small>
+            </div>
+            <div class="mock__grid"><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+        <div class="case__body">
+          <p class="case__tag">E-commerce · Projeto principal</p>
+          <h3>Northside — loja online completa</h3>
+          <p>
+            Loja de acessórios de tecnologia e casa, em modelo dropshipping. Desenhei e programei
+            tudo: da página inicial ao checkout.
+          </p>
+          <dl class="case__steps">
+            <div><dt>Desafio</dt><dd>Criar uma loja real, com pagamentos e gestão completa, sem recorrer a uma plataforma pronta.</dd></div>
+            <div><dt>O que fiz</dt><dd>Catálogo com variantes de cor e tamanho, carrinho, checkout, devoluções e chat de apoio. Backoffice para gerir produtos, encomendas, descontos e avaliações. Pagamentos via Stripe (Apple Pay, Google Pay, MB WAY, Klarna) e emails de confirmação por SMTP.</dd></div>
+            <div><dt>Aprendi</dt><dd>Depurar em produção, validar dados no servidor, gerir dependências com Composer e alojar via cPanel.</dd></div>
+          </dl>
+          <ul class="tags"><li>PHP</li><li>MySQL</li><li>Bootstrap 5</li><li>JavaScript</li><li>Stripe</li><li>PHPMailer</li><li>Composer</li></ul>
+          <div class="case__links">
+            <a href="https://github.com/soofiams/northside" target="_blank" rel="noopener" class="link-arrow">Ver código ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="projects">
+        <article class="project">
+          <p class="case__tag">Web · Restauração</p>
+          <h3>Macau D’Ouro</h3>
+          <p>Site para um restaurante inspirado na gastronomia de Macau e Portugal: menu, história e reservas online, com um backoffice protegido por login para gerir reservas e pratos.</p>
+          <ul class="tags"><li>PHP</li><li>PDO</li><li>MySQL</li><li>JavaScript</li></ul>
+          <a href="https://github.com/soofiams/Macau-D-ouro" target="_blank" rel="noopener" class="link-arrow">Ver código ↗</a>
+        </article>
+
+        <article class="project">
+          <p class="case__tag">Web · Imobiliário</p>
+          <h3>Casas &amp; Propriedades</h3>
+          <p>Site de imóveis com plantas, acabamentos e portefólio de projetos, com backoffice e base de dados própria.</p>
+          <ul class="tags"><li>PHP</li><li>MySQL</li><li>Backoffice</li></ul>
+          <a href="https://github.com/soofiams/casas_e_propriedades_" target="_blank" rel="noopener" class="link-arrow">Ver código ↗</a>
+        </article>
+
+        <article class="project project--client">
+          <p class="case__tag">Cliente real · Em desenvolvimento</p>
+          <h3>CMPNEUS — oficina auto</h3>
+          <p>Site para uma oficina em Vila Nova de Gaia: serviços, preços, pedido de orçamento e localização, com a identidade azul da marca.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </article>
+
+        <article class="project">
+          <p class="case__tag">Web · Pessoal</p>
+          <h3>Este portfólio</h3>
+          <p>Feito à mão, sem templates: tema claro/escuro, terminal interativo, tabela periódica dinâmica e formulário de contacto em PHP.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li></ul>
+          <a href="https://github.com/soofiams/portfolio-sofia" target="_blank" rel="noopener" class="link-arrow">Ver código ↗</a>
+        </article>
+      </div>
+
+      <p class="more-link"><a href="https://github.com/soofiams" target="_blank" rel="noopener" class="link-arrow">Ver todos os projetos no GitHub ↗</a></p>
+    </section>
+
+    <!-- ===== DISPONIBILIDADE ===== -->
+    <section class="section" id="disponivel">
+      <p class="eyebrow">04 — O que estou disposta a fazer</p>
+      <h2 class="section__title">Sim, <em>sim</em> e sim.</h2>
+
+      <div class="deal">
+        <ul class="deal__list">
+          <li class="yes">Estágio ou primeiro emprego júnior</li>
+          <li class="yes">Full-time</li>
+          <li class="yes">Presencial ou híbrido no Grande Porto, ou 100% remoto</li>
+          <li class="yes">Projetos freelance</li>
+          <li class="yes">Aprender uma stack nova (React, Laravel, WordPress…)</li>
+          <li class="yes">Começar imediatamente</li>
+        </ul>
+        <div class="deal__card">
+          <p class="deal__label">Funções que procuro</p>
+          <div class="roles">
+            <span>Front-end Developer</span>
+            <span>Full-stack Júnior</span>
+            <span>Web Developer</span>
+            <span>E-commerce Developer</span>
+            <span>WordPress / Shopify</span>
+          </div>
+          <p class="deal__note">
+            Se a tua equipa precisa de alguém que pega num problema e não o larga até funcionar,
+            sou eu.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="section contact" id="contacto">
+      <p class="eyebrow">05 — Contacto</p>
+      <h2 class="section__title contact__title">Vamos <em>trabalhar juntos?</em></h2>
+
+      <div class="contact__grid">
+        <div class="contact__direct">
+          <p>Respondo em menos de 24 horas.</p>
+          <button class="copy-mail" id="copyMail" data-mail="sofia04sousa@icloud.com">
+            <span id="mailText">sofia04sousa@icloud.com</span>
+            <small id="copyHint">clica para copiar</small>
+          </button>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/soofiams" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://github.com/soofiams" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+
+        <form class="form" id="contactForm" action="contact.php" method="POST" novalidate>
+          <label>Nome
+            <input type="text" name="name" required maxlength="80">
+          </label>
+          <label>Email
+            <input type="email" name="email" required maxlength="120">
+          </label>
+          <label>Empresa <small>(opcional)</small>
+            <input type="text" name="company" maxlength="100">
+          </label>
+          <label>Mensagem
+            <textarea name="message" rows="5" required maxlength="3000"></textarea>
+          </label>
+          <!-- honeypot anti-spam: humanos não veem este campo -->
+          <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off">
+          <button class="btn btn--primary" type="submit">Enviar mensagem →</button>
+          <p class="form__status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Micaela Sofia Sousa · Feito à mão, sem templates.</p>
+    <a href="#top">Voltar ao topo ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
